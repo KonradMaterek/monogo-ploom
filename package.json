@@ -1,0 +1,22 @@
+{
+  "name": "monogo-ploom",
+  "version": "1.0.0",
+  "description": "This repository contains automated tests using **Playwright (TypeScript)** designed to verify functionality across multiple Ploom market websites.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonradMaterek/monogo-ploom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KonradMaterek/monogo-ploom/issues"
+  },
+  "homepage": "https://github.com/KonradMaterek/monogo-ploom#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10"
+  }
+}
