@@ -23,12 +23,11 @@ for (const shop of shops) {
       if (shop.country === 'UK') {
         await page.getByText('Shop', { exact: true }).first().click();
         await page.getByTestId('customButton').first().click();
-        await page.locator(`${shop.testSku}`).click();
       } else if (shop.country === 'PL') {
         await page.getByTestId('headerItem-1').click();
         await page.getByRole('link', { name: 'Zobacz wszystkie produkty' }).nth(1).click();
-        await page.locator(`${shop.testSku}`).click();
       }
+      await page.locator(`${shop.testSku}`).click();
     });
 
     test('TC1: Add product to the cart', async ({ page }) => {
