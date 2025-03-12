@@ -42,3 +42,13 @@ Run all tests with:
 ```
 npx playwright test
 ```
+
+### Adding New Shops
+
+Extend the existing tests to new shops by adding entries to the shops array in the test file:
+
+```
+const markets = [
+  { url: 'https://new-shop-url.com', country: 'new country', testProduct: 'name of the product', testSku: '[data-sku="new-sku"]' },
+];
+```
